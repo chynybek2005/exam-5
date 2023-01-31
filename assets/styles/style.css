@@ -1,0 +1,130 @@
+@keyframes animation {
+    0% {background-position: 0%;}
+    100% {
+        background-position: 400%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 200px;
+    height: 100vh;
+    background: -webkit-linear-gradient(90deg, #30c04d,#101356,#000000);
+    background: linear-gradient(90deg, #30c04d,#101356,#000000);
+}
+
+
+button {
+    background: none;
+    border: none;
+}
+
+
+input {
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    background: none;
+}
+
+p {
+    color: white;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.save {
+    color: white;
+    width: 150px;
+    height: 50px;
+    line-height: 2em;
+    background: linear-gradient( 90deg, #03a9f3, #f441a5, #ffeb3b, #03a9f3);
+    background-size: 300%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+}
+.save:hover {
+    animation: animation 8s linear infinite;
+    border: none;
+}
+.save::before {
+    content: "";
+    position: absolute;
+    top: -5;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+    background: linear-gradient( 90deg, #03a9f3, #f441a5, #ffeb3b, #03a9f3);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.save:hover::before {
+    filter: blur(20px);
+}
+
+
+
+
+
+.sort {
+    margin: 0 50px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    line-height: 2em;
+    background: linear-gradient( 90deg, #03a9f3, #f441a5, #ffeb3b, #03a9f3);
+    background-size: 300%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+}
+.sort:hover {
+    animation: animation 8s linear infinite;
+    border: none;
+}
+.sort::before {
+    content: "";
+    position: absolute;
+    top: -5;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+    background: linear-gradient( 90deg, #03a9f3, #f441a5, #ffeb3b, #03a9f3);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.sort:hover::before {
+    filter: blur(20px);
+}
+
+
+.names {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
